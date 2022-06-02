@@ -1,4 +1,5 @@
 import ftplib
+import socket
 
 def testAnonymousLogin(hostname):
         try:
