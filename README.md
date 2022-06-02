@@ -46,3 +46,5 @@ Web Service Attacks
 	XML Injection
 	Xpath Injection
 ```
+Reference
+https://book.hacktricks.xyz/network-services-pentesting/pentesting-web
