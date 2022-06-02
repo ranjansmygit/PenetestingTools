@@ -1,5 +1,4 @@
 import ftplib
-import os
 
 def testAnonymousLogin(hostname):
         try:
