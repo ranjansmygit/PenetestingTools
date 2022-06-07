@@ -1,4 +1,5 @@
 import socket
+
 def retBanner(ip, port):
   try: 
     socket.setdefaulttimeout(2) 
@@ -8,7 +9,8 @@ def retBanner(ip, port):
     return banner
   except:
     return
-def checkVulns(banner):
+
+ def checkVulns(banner):
   if 'FreeFloat Ftp Server (Version 1.00)' in banner:
     print '[+] FreeFloat FTP Server is vulnerable.' 
   elif '3Com 3CDaemon FTP Server Version 2.0' in banner:
