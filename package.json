@@ -1,0 +1,24 @@
+{
+  "name": "penetestingtools",
+  "version": "1.0.0",
+  "description": "Penetsting Tool collections",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranjansmygit/PenetestingTools.git"
+  },
+  "author": "ranjan.smy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ranjansmygit/PenetestingTools/issues"
+  },
+  "homepage": "https://github.com/ranjansmygit/PenetestingTools#readme",
+  "dependencies": {
+    "jsonfile": "^6.1.0",
+    "moment": "^2.29.4",
+    "simple-git": "^3.19.1"
+  }
+}
