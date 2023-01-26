@@ -30,4 +30,4 @@ else
 		console.log('--Not running this code'); 
 	}" >> $uniqFile
 
-done < <(printf "%s\n" "${fileArray[@]}" | sort -u)
+done < <(printf "%s\n" "${fileArray[@]}" | sort -u)	##
