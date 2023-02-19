@@ -1,0 +1,16 @@
+$Url = "https://example.com"
+$Wordlist = "C:\path\to\wordlist.txt"
+
+# Get content of wordlist
+$Content = Get-Content $Wordlist
+
+# Loop through wordlist and check for subdomains
+foreach ($Word in $Content) {
+    $Subdomain = $Word + "." + $Url
+    $Response = Invoke-WebRequest -Uri $Subdomain -UseBasicParsing -ErrorAction SilentlyContinue
+
+    # Check if response is successful
+    if ($Response.StatusCode -eq 200) {
+        Write-Host "Found subdomain: $Subdomain"
+    }
+}
