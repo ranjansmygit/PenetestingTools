@@ -10,7 +10,7 @@ response = security_hub.batch_enable_standards(StandardsSubscriptionRequests=[{'
 
 # Send the output via email
 def send_email(recipient, body):
-    SENDER = "sender@example.com"
+    SENDER = "sender-test@example.com"
     AWS_REGION = "us-west-2"
     SUBJECT = "AWS Security Scan Results"
     CHARSET = "UTF-8"
@@ -42,4 +42,4 @@ def send_email(recipient, body):
         print("Email sent! Message ID:"),
         print(response['MessageId'])
 
-send_email("recipient@example.com", response)
+send_email("recipient-test@example.com", response)
